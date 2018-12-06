@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>hasnameReNameTitleWithChangeStatus</key>
+	<string>+ (void)hasnameReNameTitleWithChangeStatus:(NSString *)status {
+
+NSString * realName = @&quot;&quot;;
+switch ([status integerValue]) {
+case 1:
+realName = @&quot;小明&quot;;
+break;
+case 2:
+realName = @&quot;小宏&quot;;
+break;
+case 3:
+realName = @&quot;大明&quot;;
+break;
+case 4:
+realName = @&quot;驳回&quot;;
+break;
+case 5:
+realName = @&quot;INF&quot;;
+break;
+default:
+break;
+}
+}
+/**
+*hello main hunyongde
+*/</string>
+	<key>hasnameloopForVarCharAndTakeAIdentify</key>
+	<string>- (void)hasnameloopForVarCharAndTakeAIdentify {
+
+char * a = &quot;abcd&quot;;
+a++;
+NSLog(@&quot;%s&quot;,a);
+}</string>
+	<key>hasnamemakeDifferentThingToMyProject</key>
+	<string>- (void)hasnamemakeDifferentThingToMyProject {
+
+NSString * str = @&quot;/\/*$#%#@()*&quot;;
+NSArray * arr = [str componentsSeparatedByString:@&quot;&quot;];
+NSInteger timeNumber = 0;
+for (int i = 0; i &lt; arr.count; i++) {
+if ([arr[i] isEqualToString:@&quot;*&quot;]) {
+timeNumber ++;
+}
+NSLog(@&quot;%@&quot;,arr[i]);
+}
+if (timeNumber &gt; 0) {
+NSLog(@&quot;YES&quot;);
+}else{
+NSLog(@&quot;NO&quot;);
+}
+}</string>
+	<key>haschunckjudgeAgeAndHealthyStatus</key>
+	<string>+ (void)haschunckjudgeAgeAndHealthyStatus {
+
+    NSInteger age = 100;
+    NSInteger healthy = 100;
+    if (age%4 &gt; 0) {
+        if (healthy &gt; 100) {
+            NSLog(@&quot;You have a good result!&quot;);
+        }
+    }else{
+
+        NSLog(@&quot;You enjoy a good life!&quot;);
+    }
+
+}</string>
+	<key>hassasymakeChangeToMyClock</key>
+	<string>- (void)hassasymakeChangeToMyClock {
+
+    int second = 10;
+    int minutes = 30;
+    int hour = 20;
+    NSString * time = [NSString stringWithFormat:@&quot;%d:%d:%d&quot;,hour,minutes,second];
+    UILabel * timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 30)];
+    timeLabel.text = time;
+    timeLabel.font = [UIFont systemFontOfSize:15];
+    timeLabel.textAlignment = NSTextAlignmentCenter;
+    timeLabel.numberOfLines = 0;
+    timeLabel.userInteractionEnabled = YES;
+}</string>
+	<key>hasfindchangePasswordByName</key>
+	<string>+ (void)hasfindchangePasswordByName:(NSString *)name age:(NSInteger)age {
+
+    if ([name isEqualToString:@&quot;liujfjaljcjl&quot;]) {
+        name = @&quot;YES&quot;;
+    }
+    if (age &gt; 100) {
+        age = -100;
+    }
+    if ([name isEqualToString:@&quot;YES&quot;] &amp;&amp; age == -100) {
+        NSLog(@&quot;change password success&quot;);
+    }
+}</string>
+	<key>hasnameturnBackToOranigal</key>
+	<string>- (void)hasnameturnBackToOranigal {
+    
+    NSString * string = nil;
+    if ( [ self isKindOfClass:[NSArray class]] || [self isKindOfClass:[NSDictionary class]] || [ self isKindOfClass:[NSString class]]) {
+        string = @&quot;&quot;;
+        
+        string = [NSString stringWithFormat:@&quot;fajffjfajkfj&quot;];
+        
+    }else{
+        string = [NSString stringWithFormat:@&quot;fajffjfajkfj&quot;];
+    }
+}</string>
+	<key>hastakemake_NoUseMessageAndCanDelteWontCauseProblems</key>
+	<string>- (void)hastakemake_NoUseMessageAndCanDelteWontCauseProblems {
+    
+    NSString * string = nil;
+    
+    if ([self isKindOfClass:[NSArray class]] || [self isKindOfClass:[NSDictionary class]] || [self isKindOfClass:[NSString class]]) {
+        string = @&quot;&quot;;
+        
+        int a = 10;
+        a = 0;
+        string = @&quot;&quot;;
+        return ;
+        
+    }else{
+        int a = 10;
+        a= 100;
+        return ;
+    }
+    
+}</string>
+</dict>
+</plist>
